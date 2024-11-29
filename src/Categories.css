@@ -1,0 +1,219 @@
+div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.CardCategories {
+    margin: 20px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #a8c0ff 0%, #3f2b96 100%);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.CardCategories:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+form .form-control {
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    transition: all 0.3s ease;
+}
+
+form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+button[type="submit"] {
+    padding: 14px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+form input[type="file"] {
+    background-color: #fff;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+form input[type="file"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+form select {
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    width: 100%;
+    margin-top: 15px;
+}
+
+form select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.categorieslist {
+    border-radius: 12px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categorieslist:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.categorieslist .category-image {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.categorieslist .category-image:hover {
+    transform: scale(1.05);
+}
+
+.categorieslist .card-body {
+    padding: 25px;
+    text-align: center;
+}
+
+.categorieslist .card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.categorieslist .list-group-item {
+    font-size: 1rem;
+    color: #555;
+    padding: 12px;
+    background-color: transparent;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.categorieslist .list-group-item:hover {
+    background-color: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+    div {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h2::before {
+        width: 40px;
+        height: 3px;
+    }
+
+    .CardCategories {
+        padding: 15px;
+    }
+
+    .categorieslist {
+        margin-bottom: 15px;
+    }
+
+    .categorieslist .category-image {
+        height: 200px;
+    }
+
+    .categorieslist .card-title {
+        font-size: 1.1rem;
+    }
+
+    .categorieslist .list-group-item {
+        font-size: 0.9rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form .form-control {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
